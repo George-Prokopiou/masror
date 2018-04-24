@@ -6,33 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>About us</title>
+  <style>
+      .wrapper{
+        display:grid;
+        grid-template-columns: 70% 30% 
+      } 
+      </style>
+
 </head>
+
 <body>
-  <div id="header">
-    This is the header region.
-  </div>
-  <div id="image">
-    My website logo.
-   </div>
-  <img src="/home/va/agriculture-arable-clouds-countryside.jpg" alt="Sunset" height="100" width="100">
-   <div id="navigation">
-    <a href="index.html">Home.</a>
-    <a href="Page1.html">Page1.</a>  
-    <a href="Aboutus.html">About us.</a>
-  </div>        
+    <div id="header">
+        This is the header region.
+        <div id="navigation">
+            <a href="index.html">Home.</a>
+            <a href="Page1.html">Page1.</a>  
+            <a href="Aboutus.html">About us.</a>
+          </div>
+          <img src= "/home/va/agriculture-arable-clouds-countryside.jpg" alt="Sunset" height="100" width="100">Sunset
+        </div>
+
+  <div class="wrapper">     
     <div id="main-content">I would like to have a web page with a header 120px tall, a footer 120px tall, and a main content whose minimum height is 600px but when the browser is then stretched vertically past 840px in height (or the user zooms out with "control minus" on Firefox), I want the body to stretch vertically to fill all available space minus the header and footer space
       </div>
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html">Home</a>
-        <a href="Page1.html">Page1</a>
-        <a href="Aboutus.html">Aboutus</a>
-      </div>
-      <span onclick="openNav()">open</span>
-    
+
+      <div id="sidebar">
+          This is the sidebar.
+        </div>
+        </div>
   <div id="footer">
     This is the footer region.
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
