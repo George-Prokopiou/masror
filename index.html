@@ -5,24 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Documents</title>
+
+  <style>
+  .wrapper{
+    display:grid;
+    grid-template-columns: 70% 30% 
+  } 
+  </style>
+
 </head>
 <body>
-  <div id="header">
-    <img src="/home/va/agriculture-arable-clouds-countryside.jpg"  alt="Sunset" height="100" width="100"> Sunset.
-   </div>
-    <div id="navigation">
-    <a href="index.html">Home.</a>
-    <a href="Page1.html">Page1.</a>  
-    <a href="Aboutus.html">About us.</a>
-  </div>   
+    <div id="header">
+        This is the header region.
+        <div id="navigation">
+            <a href="index.html">Home.</a>
+            <a href="Page1.html">Page1.</a>  
+            <a href="Aboutus.html">About us.</a>
+          </div>
+          <img src= "/home/va/agriculture-arable-clouds-countryside.jpg" alt="Sunset" height="100" width="100">Sunset
+        </div>
   
-  
+  <div class="wrapper">   
   <div id="main-content">
       I've tried your solution. See the code above. One could think a height of 100% would expand to fill all available space in the viewport pushing the footer to the bottom but it does not. This doesn't work. Please post the correct fix. – John Sonderson Oct 25 '13 at 2:12
       Since nobody has answered this question, does this mean there is no way to stretch an HTML page vertically by stretching the main content area, so that if the height of the page is too small, then this height is stretched to fill the entire viewport? Is there no way to get the viewport height and thus manipulate the DOM to fill the available space, not even using jQuery? – John Sonderson Nov 3 '13 at 23:54  
   </div>
-  
+
+  <div id="sidebar">
+    This is the sidebar.
+  </div>
+  </div>
+
   <div id="footer">
     This is the footer region.
   </div>
