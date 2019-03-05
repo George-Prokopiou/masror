@@ -1,1 +1,1 @@
-alert ('Hello world.Its time to wake up.');
+//alert ('Hello world.Its time to wake up.');
